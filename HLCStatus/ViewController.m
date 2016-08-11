@@ -30,6 +30,8 @@
     
     NSLog( @"ni zia na  jwakfkj ");
     
+    NSLog(@"hhh  ");
+    
     
 }
 
