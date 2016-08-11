@@ -22,6 +22,7 @@
     NSLog(@"llal");
     
     NSLog(@"hha ");
+    NSLog(@"4");
 }
 
 - (void)didReceiveMemoryWarning {
