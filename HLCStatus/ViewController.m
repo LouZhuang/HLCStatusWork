@@ -26,6 +26,10 @@
     
     NSLog(@"年");
     
+    NSLog( @"你字啊那啊  ");
+    
+    NSLog( @"ni zia na  jwakfkj ");
+    
     
 }
 

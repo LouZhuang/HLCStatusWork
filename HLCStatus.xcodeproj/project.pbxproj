@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD10D3C51D5C692000C49669 /* HLCStatusFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = CD10D3C41D5C692000C49669 /* HLCStatusFlag.m */; };
 		CD77D1091D5C2FC70089C29E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D1081D5C2FC70089C29E /* main.m */; };
 		CD77D10C1D5C2FC70089C29E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D10B1D5C2FC70089C29E /* AppDelegate.m */; };
 		CD77D10F1D5C2FC70089C29E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77D10E1D5C2FC70089C29E /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD10D3C31D5C692000C49669 /* HLCStatusFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLCStatusFlag.h; sourceTree = "<group>"; };
+		CD10D3C41D5C692000C49669 /* HLCStatusFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLCStatusFlag.m; sourceTree = "<group>"; };
 		CD77D1041D5C2FC70089C29E /* HLCStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLCStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD77D1081D5C2FC70089C29E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD77D10A1D5C2FC70089C29E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 				CD77D10B1D5C2FC70089C29E /* AppDelegate.m */,
 				CD77D10D1D5C2FC70089C29E /* ViewController.h */,
 				CD77D10E1D5C2FC70089C29E /* ViewController.m */,
+				CD10D3C31D5C692000C49669 /* HLCStatusFlag.h */,
+				CD10D3C41D5C692000C49669 /* HLCStatusFlag.m */,
 				CD77D1101D5C2FC70089C29E /* Main.storyboard */,
 				CD77D1161D5C2FC70089C29E /* Assets.xcassets */,
 				CD77D1181D5C2FC70089C29E /* LaunchScreen.storyboard */,
@@ -156,6 +161,7 @@
 				CD77D10F1D5C2FC70089C29E /* ViewController.m in Sources */,
 				CD77D1151D5C2FC70089C29E /* HLCStatus.xcdatamodeld in Sources */,
 				CD77D10C1D5C2FC70089C29E /* AppDelegate.m in Sources */,
+				CD10D3C51D5C692000C49669 /* HLCStatusFlag.m in Sources */,
 				CD77D1091D5C2FC70089C29E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +313,7 @@
 				CD77D1201D5C2FC70089C29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
