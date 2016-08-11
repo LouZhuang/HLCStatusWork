@@ -23,6 +23,10 @@
     
     NSLog(@"hha ");
     NSLog(@"4");
+    
+    NSLog(@"年");
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
