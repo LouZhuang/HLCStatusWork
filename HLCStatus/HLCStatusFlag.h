@@ -6,8 +6,18 @@
 //  Copyright © 2016年 huanglch. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface HLCStatusFlag : NSObject
++(void)showWindow;
++(void)showNomalMessage:(NSString *)nomalMesg andImage:(UIImage *)image;
+
++(void)showSuccessMessage:(NSString *)sucMesg;
+
++(void)showLoadingMessage:(NSString *)loadMesg;
+
++(void)showErrorMessage:(NSString *)errorMesg;
+
++(void)showHidden;
 
 @end

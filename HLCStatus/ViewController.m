@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HLCStatusFlag.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)window:(id)sender {
+    [HLCStatusFlag showWindow];
+}
 
+- (IBAction)success:(id)sender {
+    [HLCStatusFlag showSuccessMessage:@"哈哈"];
+}
+- (IBAction)error:(id)sender {
+}
+- (IBAction)nomal:(id)sender {
+}
+- (IBAction)hid:(id)sender {
+    [HLCStatusFlag showHidden];
+}
 @end
