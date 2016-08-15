@@ -17,24 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"hha ");
-    
-    NSLog(@"llal");
-    
-    NSLog(@"hha ");
-    NSLog(@"4");
-    
-    NSLog(@"年");
-    
-    NSLog( @"你字啊那啊  ");
-    
-    NSLog( @"ni zia na  jwakfkj ");
-    
-    NSLog(@"hhh  ");
-    
-    NSLog(@"合并啦");
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
