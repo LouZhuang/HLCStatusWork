@@ -33,10 +33,11 @@
     [HLCStatusFlag showSuccessMessage:@"哈哈"];
 }
 - (IBAction)error:(id)sender {
+    [HLCStatusFlag showErrorMessage:@"哈哈"];
 }
 - (IBAction)nomal:(id)sender {
 }
 - (IBAction)hid:(id)sender {
-    [HLCStatusFlag showHidden];
+    [HLCStatusFlag showLoadingMessage:@"哈哈"];
 }
 @end

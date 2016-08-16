@@ -30,33 +30,55 @@ static NSTimer *timer_;
 +(void)showSuccessMessage:(NSString *)sucMesg
 {
     [self showWindow];
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[UIImage imageNamed:@"success"] forState:UIControlStateNormal];
-    [btn setTitle:@"加载成功" forState:UIControlStateNormal];
-    btn.titleLabel.font = HLCStatusTextFont;
-    btn.frame = window_.bounds;
-    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-    [window_ addSubview:btn];
-    
-  //  timer_ = [NSTimer scheduledTimerWithTimeInterval:<#(NSTimeInterval)#> invocation:<#(nonnull NSInvocation *)#> repeats:<#(BOOL)#>]
+    [timer_ invalidate];
+    UIImage *image = [UIImage imageNamed:@"success"];
+    [self showButton:@"加载成功" andImage:image];
+    timer_ = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showHidden) userInfo:nil repeats:NO];
     
 }
 
 +(void)showErrorMessage:(NSString *)errorMesg
 {
+    [self showWindow];
+    [timer_ invalidate];
+    UIImage *image = [UIImage imageNamed:@"error"];
+    [self showButton:@"加载失败" andImage:image];
+    timer_ = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showHidden) userInfo:nil repeats:NO];
     
 }
 
 +(void)showLoadingMessage:(NSString *)loadMesg
 {
+    [self showWindow];
+    [timer_ invalidate];
+    [self showButton:@"正在加载" andImage:nil];
+    UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    [window_ addSubview:indicatorView];
+    indicatorView.center = CGPointMake(150, 10);
+    [indicatorView startAnimating];
+    timer_ = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showHidden) userInfo:nil repeats:NO];
 }
 
 +(void)showNomalMessage:(NSString *)nomalMesg andImage:(UIImage *)image
 {
+    
 }
 
 +(void)showHidden
 {
     window_ = nil;
+    timer_ = nil;
 }
+
++(void)showButton:(NSString *)title andImage:(UIImage *)image
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:image forState:UIControlStateNormal];
+    [btn setTitle:title forState:UIControlStateNormal];
+    btn.titleLabel.font = HLCStatusTextFont;
+    btn.frame = window_.bounds;
+    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+    [window_ addSubview:btn];
+}
+
 @end
