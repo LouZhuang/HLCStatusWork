@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "hulni" => "3283180700@qq.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/LouZhuang/HLCStatusWork.git", :tag => "#{s.version}"}
+  s.source       = { :git => "https://github.com/LouZhuang/HLCStatusWork.git", :tag => "1.0.1"}
   s.source_files = "HLCStatus/*.{h,m}"
   s.resources    = "HLCStatus/**"
   s.framework    = "UIKit"
